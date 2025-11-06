@@ -57,7 +57,7 @@ public class ProductServiceImpl implements ProductService {
         entity.setExpDate(requestDto.getExpDate());
         entity.setBatchNo(requestDto.getBatchNo());
         entity.setBenefitsList(requestDto.getBenefitsList());
-        entity.setDirectionsList(requestDto.getDirectionsList());
+        entity.setIngredientsList(requestDto.getIngredientsList());
 
         entity.setProductMainImage(requestDto.getProductMainImage().getBytes());
 
@@ -157,7 +157,7 @@ public class ProductServiceImpl implements ProductService {
         entity.setExpDate(requestDto.getExpDate());
         entity.setBatchNo(requestDto.getBatchNo());
         entity.setBenefitsList(requestDto.getBenefitsList());
-        entity.setDirectionsList(requestDto.getDirectionsList());
+        entity.setIngredientsList(requestDto.getIngredientsList());
 
         entity.setProductMainImage(requestDto.getProductMainImage().getBytes());
 
@@ -215,7 +215,7 @@ public class ProductServiceImpl implements ProductService {
         if (requestDto.getExpDate() != null) entity.setExpDate(requestDto.getExpDate());
         if (requestDto.getBatchNo() != null) entity.setBatchNo(requestDto.getBatchNo());
         if (requestDto.getBenefitsList() != null && !requestDto.getBenefitsList().isEmpty()) entity.setBenefitsList(requestDto.getBenefitsList());
-        if (requestDto.getDirectionsList() != null && !requestDto.getDirectionsList().isEmpty()) entity.setDirectionsList(requestDto.getDirectionsList());
+        if (requestDto.getIngredientsList() != null && !requestDto.getIngredientsList().isEmpty()) entity.setIngredientsList(requestDto.getIngredientsList());
 
         if (requestDto.getProductMainImage() != null) entity.setProductMainImage(requestDto.getProductMainImage().getBytes());
         if (requestDto.getProductSubImages() != null) {
@@ -274,7 +274,7 @@ public class ProductServiceImpl implements ProductService {
         responseDto.setExpDate(entity.getExpDate());
         responseDto.setBatchNo(entity.getBatchNo());
         responseDto.setBenefitsList(entity.getBenefitsList());
-        responseDto.setDirectionsList(entity.getDirectionsList());
+        responseDto.setDirectionsList(entity.getIngredientsList());
 
         return responseDto;
     }
@@ -501,7 +501,7 @@ public class ProductServiceImpl implements ProductService {
                             .filter(s -> !s.isEmpty())
                             .collect(Collectors.toList());
                 }
-                dto.setDirectionsList(directions);
+                dto.setIngredientsList(directions);
 
                 // Create the product using existing createProduct method
                 try {

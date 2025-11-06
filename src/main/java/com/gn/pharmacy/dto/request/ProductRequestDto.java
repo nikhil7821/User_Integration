@@ -30,7 +30,7 @@ public class ProductRequestDto {
     private String expDate;
     private String batchNo;
     private List<String> benefitsList = new ArrayList<>();
-    private List<String> directionsList = new ArrayList<>();
+    private List<String> ingredientsList = new ArrayList<>();
 
 
     // Default constructor
@@ -189,11 +189,11 @@ public class ProductRequestDto {
         this.benefitsList = benefitsList;
     }
 
-    public List<String> getDirectionsList() {
-        return directionsList;
+    public List<String> getIngredientsList() {
+        return ingredientsList;
     }
 
-    public void setDirectionsList(List<String> directionsList) {
-        this.directionsList = directionsList;
+    public void setIngredientsList(List<String> ingredientsList) {
+        this.ingredientsList = ingredientsList;
     }
 }

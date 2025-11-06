@@ -74,9 +74,9 @@ public class ProductEntity {
 
     //NEW ADDED COLUMN
     @ElementCollection
-    @CollectionTable(name = "product_directions", joinColumns = @JoinColumn(name = "product_id"))
-    @Column(name = "directions_list")
-    private List<String> directionsList = new ArrayList<>();
+    @CollectionTable(name = "product_ingredients", joinColumns = @JoinColumn(name = "product_id"))
+    @Column(name = "ingredients_list")
+    private List<String> ingredientsList = new ArrayList<>();
 
 
     @Lob
@@ -127,7 +127,7 @@ public class ProductEntity {
         this.expDate = expDate;
         this.batchNo = batchNo;
         this.benefitsList = benefitsList;
-        this.directionsList = directionsList;
+        this.ingredientsList = ingredientsList;
         this.productMainImage = productMainImage;
         this.productSubImages = productSubImages;
         this.productDynamicFields = productDynamicFields;
@@ -306,11 +306,11 @@ public class ProductEntity {
         this.benefitsList = benefitsList;
     }
 
-    public List<String> getDirectionsList() {
-        return directionsList;
+    public List<String> getIngredientsList() {
+        return ingredientsList;
     }
 
-    public void setDirectionsList(List<String> directionsList) {
-        this.directionsList = directionsList;
+    public void setIngredientsList(List<String> ingredientsList) {
+        this.ingredientsList = ingredientsList;
     }
 }

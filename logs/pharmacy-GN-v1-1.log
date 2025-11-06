@@ -1,84 +1,38 @@
-2025-10-10T11:27:40.725+05:30  INFO 14692 --- [Pharmacy] [restartedMain] com.gn.pharmacy.PharmacyApplication      : Starting PharmacyApplication using Java 24.0.2 with PID 14692 (C:\Pharmacy-Project\pharmacy-GN-backend-v1.1\target\classes started by admim in C:\Pharmacy-Project\pharmacy-gn-backend-v1.1)
-2025-10-10T11:27:40.734+05:30  INFO 14692 --- [Pharmacy] [restartedMain] com.gn.pharmacy.PharmacyApplication      : No active profile set, falling back to 1 default profile: "default"
-2025-10-10T11:27:40.817+05:30  INFO 14692 --- [Pharmacy] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\admim\.m2\repository\io\github\cdimascio\java-dotenv\5.2.2\java-dotenv-5.2.2.jar referenced one or more files that do not exist: file:/C:/Users/admim/.m2/repository/io/github/cdimascio/java-dotenv/5.2.2/kotlin-stdlib-1.4.0.jar,file:/C:/Users/admim/.m2/repository/io/github/cdimascio/java-dotenv/5.2.2/kotlin-stdlib-common-1.4.0.jar,file:/C:/Users/admim/.m2/repository/io/github/cdimascio/java-dotenv/5.2.2/annotations-13.0.jar
-2025-10-10T11:27:40.817+05:30  INFO 14692 --- [Pharmacy] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-10-10T11:27:40.818+05:30  INFO 14692 --- [Pharmacy] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-10-10T11:27:42.785+05:30  INFO 14692 --- [Pharmacy] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-10-10T11:27:42.938+05:30  INFO 14692 --- [Pharmacy] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 136 ms. Found 13 JPA repository interfaces.
-2025-10-10T11:27:43.853+05:30  INFO 14692 --- [Pharmacy] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-10-10T11:27:43.879+05:30  INFO 14692 --- [Pharmacy] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-10-10T11:27:43.880+05:30  INFO 14692 --- [Pharmacy] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
-2025-10-10T11:27:43.952+05:30  INFO 14692 --- [Pharmacy] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-10-10T11:27:43.952+05:30  INFO 14692 --- [Pharmacy] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3134 ms
-2025-10-10T11:27:44.221+05:30  INFO 14692 --- [Pharmacy] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-10-10T11:27:44.321+05:30  INFO 14692 --- [Pharmacy] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
-2025-10-10T11:27:44.380+05:30  INFO 14692 --- [Pharmacy] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-10-10T11:27:44.878+05:30  INFO 14692 --- [Pharmacy] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-10-10T11:27:44.922+05:30  INFO 14692 --- [Pharmacy] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-10-10T11:27:45.196+05:30  INFO 14692 --- [Pharmacy] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1dbd22e7
-2025-10-10T11:27:45.199+05:30  INFO 14692 --- [Pharmacy] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-10-10T11:27:45.339+05:30  INFO 14692 --- [Pharmacy] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-11-06T11:06:57.988+05:30  INFO 11504 --- [Pharmacy] [restartedMain] com.gn.pharmacy.PharmacyApplication      : Starting PharmacyApplication using Java 24.0.2 with PID 11504 (E:\pharmacy-GN-backend-v1.1\target\classes started by nikhi in E:\pharmacy-GN-backend-v1.1)
+2025-11-06T11:06:57.996+05:30  INFO 11504 --- [Pharmacy] [restartedMain] com.gn.pharmacy.PharmacyApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-11-06T11:06:58.127+05:30  INFO 11504 --- [Pharmacy] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\nikhi\.m2\repository\io\github\cdimascio\java-dotenv\5.2.2\java-dotenv-5.2.2.jar referenced one or more files that do not exist: file:/C:/Users/nikhi/.m2/repository/io/github/cdimascio/java-dotenv/5.2.2/kotlin-stdlib-1.4.0.jar,file:/C:/Users/nikhi/.m2/repository/io/github/cdimascio/java-dotenv/5.2.2/kotlin-stdlib-common-1.4.0.jar,file:/C:/Users/nikhi/.m2/repository/io/github/cdimascio/java-dotenv/5.2.2/annotations-13.0.jar
+2025-11-06T11:06:58.129+05:30  INFO 11504 --- [Pharmacy] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-06T11:06:58.130+05:30  INFO 11504 --- [Pharmacy] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-06T11:07:00.195+05:30  INFO 11504 --- [Pharmacy] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-06T11:07:00.405+05:30  INFO 11504 --- [Pharmacy] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 191 ms. Found 15 JPA repository interfaces.
+2025-11-06T11:07:01.665+05:30  INFO 11504 --- [Pharmacy] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2025-11-06T11:07:01.691+05:30  INFO 11504 --- [Pharmacy] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-06T11:07:01.691+05:30  INFO 11504 --- [Pharmacy] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-11-06T11:07:01.815+05:30  INFO 11504 --- [Pharmacy] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-06T11:07:01.816+05:30  INFO 11504 --- [Pharmacy] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3684 ms
+2025-11-06T11:07:02.193+05:30  INFO 11504 --- [Pharmacy] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-06T11:07:02.311+05:30  INFO 11504 --- [Pharmacy] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-11-06T11:07:02.396+05:30  INFO 11504 --- [Pharmacy] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-06T11:07:02.946+05:30  INFO 11504 --- [Pharmacy] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-06T11:07:02.996+05:30  INFO 11504 --- [Pharmacy] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-06T11:07:03.345+05:30  INFO 11504 --- [Pharmacy] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3129b2ac
+2025-11-06T11:07:03.348+05:30  INFO 11504 --- [Pharmacy] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-06T11:07:03.499+05:30  INFO 11504 --- [Pharmacy] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
-	Database version: 8.0.41
+	Database version: 8.0.43
 	Autocommit mode: undefined/unknown
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-10-10T11:27:46.685+05:30  INFO 14692 --- [Pharmacy] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-10-10T11:27:46.909+05:30  INFO 14692 --- [Pharmacy] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-10-10T11:27:47.360+05:30  INFO 14692 --- [Pharmacy] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-10-10T11:27:48.525+05:30  WARN 14692 --- [Pharmacy] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-10-10T11:27:48.685+05:30 DEBUG 14692 --- [Pharmacy] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 88 mappings in 'requestMappingHandlerMapping'
-2025-10-10T11:27:48.805+05:30 DEBUG 14692 --- [Pharmacy] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2025-10-10T11:27:48.836+05:30 DEBUG 14692 --- [Pharmacy] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2025-10-10T11:27:48.899+05:30 DEBUG 14692 --- [Pharmacy] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2025-10-10T11:27:49.045+05:30  INFO 14692 --- [Pharmacy] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-10-10T11:27:49.087+05:30  INFO 14692 --- [Pharmacy] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-10-10T11:27:49.098+05:30  INFO 14692 --- [Pharmacy] [restartedMain] com.gn.pharmacy.PharmacyApplication      : Started PharmacyApplication in 9.068 seconds (process running for 13.578)
-2025-10-10T11:28:28.613+05:30  INFO 14692 --- [Pharmacy] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-10-10T11:28:28.614+05:30  INFO 14692 --- [Pharmacy] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-10-10T11:28:28.614+05:30 DEBUG 14692 --- [Pharmacy] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2025-10-10T11:28:28.614+05:30 DEBUG 14692 --- [Pharmacy] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2025-10-10T11:28:28.614+05:30 DEBUG 14692 --- [Pharmacy] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
-2025-10-10T11:28:28.615+05:30 DEBUG 14692 --- [Pharmacy] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@36315e77
-2025-10-10T11:28:28.616+05:30 DEBUG 14692 --- [Pharmacy] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@6950ebe8
-2025-10-10T11:28:28.617+05:30 DEBUG 14692 --- [Pharmacy] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2025-10-10T11:28:28.617+05:30  INFO 14692 --- [Pharmacy] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-2025-10-10T11:28:28.629+05:30 DEBUG 14692 --- [Pharmacy] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/products/get-all-products?page=0&size=10", parameters={masked}
-2025-10-10T11:28:28.643+05:30 DEBUG 14692 --- [Pharmacy] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gn.pharmacy.controller.ProductController#getAllProducts(int, int)
-2025-10-10T11:28:28.692+05:30  INFO 14692 --- [Pharmacy] [http-nio-8080-exec-1] c.g.p.controller.ProductController       : Request received to get all products - page: 0, size: 10
-2025-10-10T11:28:28.910+05:30  INFO 14692 --- [Pharmacy] [http-nio-8080-exec-1] c.g.p.controller.ProductController       : Retrieved 10 products on page 0
-2025-10-10T11:28:28.947+05:30  WARN 14692 --- [Pharmacy] [http-nio-8080-exec-1] ration$PageModule$WarningLoggingModifier : Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
-	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
-	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
-
-2025-10-10T11:28:28.953+05:30 DEBUG 14692 --- [Pharmacy] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-10-10T11:28:28.954+05:30 DEBUG 14692 --- [Pharmacy] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 2 containing com.gn.pharmacy.dto.response.ProductResponseDto instances]
-2025-10-10T11:28:29.094+05:30 DEBUG 14692 --- [Pharmacy] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2025-10-10T11:28:44.819+05:30 DEBUG 14692 --- [Pharmacy] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/products/get-product/13", parameters={}
-2025-10-10T11:28:44.824+05:30 DEBUG 14692 --- [Pharmacy] [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gn.pharmacy.controller.ProductController#getProduct(Long)
-2025-10-10T11:28:44.829+05:30  INFO 14692 --- [Pharmacy] [http-nio-8080-exec-2] c.g.p.controller.ProductController       : Request received to get product by ID: 13
-2025-10-10T11:28:44.851+05:30  INFO 14692 --- [Pharmacy] [http-nio-8080-exec-2] c.g.p.controller.ProductController       : Product retrieved successfully with ID: 13
-2025-10-10T11:28:44.852+05:30 DEBUG 14692 --- [Pharmacy] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-10-10T11:28:44.852+05:30 DEBUG 14692 --- [Pharmacy] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.gn.pharmacy.dto.response.ProductResponseDto@6abf291d]
-2025-10-10T11:28:44.857+05:30 DEBUG 14692 --- [Pharmacy] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2025-10-10T11:28:54.903+05:30 DEBUG 14692 --- [Pharmacy] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/products/get-product/1", parameters={}
-2025-10-10T11:28:54.903+05:30 DEBUG 14692 --- [Pharmacy] [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gn.pharmacy.controller.ProductController#getProduct(Long)
-2025-10-10T11:28:54.904+05:30  INFO 14692 --- [Pharmacy] [http-nio-8080-exec-3] c.g.p.controller.ProductController       : Request received to get product by ID: 1
-2025-10-10T11:28:54.909+05:30  INFO 14692 --- [Pharmacy] [http-nio-8080-exec-3] c.g.p.controller.ProductController       : Product retrieved successfully with ID: 1
-2025-10-10T11:28:54.910+05:30 DEBUG 14692 --- [Pharmacy] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-10-10T11:28:54.910+05:30 DEBUG 14692 --- [Pharmacy] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.gn.pharmacy.dto.response.ProductResponseDto@621557ce]
-2025-10-10T11:28:54.915+05:30 DEBUG 14692 --- [Pharmacy] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2025-10-10T11:29:40.922+05:30 DEBUG 14692 --- [Pharmacy] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/products/get-all-products?page=0&size=10", parameters={masked}
-2025-10-10T11:29:40.923+05:30 DEBUG 14692 --- [Pharmacy] [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gn.pharmacy.controller.ProductController#getAllProducts(int, int)
-2025-10-10T11:29:40.925+05:30  INFO 14692 --- [Pharmacy] [http-nio-8080-exec-4] c.g.p.controller.ProductController       : Request received to get all products - page: 0, size: 10
-2025-10-10T11:29:40.956+05:30  INFO 14692 --- [Pharmacy] [http-nio-8080-exec-4] c.g.p.controller.ProductController       : Retrieved 10 products on page 0
-2025-10-10T11:29:40.956+05:30 DEBUG 14692 --- [Pharmacy] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-10-10T11:29:40.956+05:30 DEBUG 14692 --- [Pharmacy] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 2 containing com.gn.pharmacy.dto.response.ProductResponseDto instances]
-2025-10-10T11:29:40.989+05:30 DEBUG 14692 --- [Pharmacy] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2025-10-10T11:33:53.593+05:30  INFO 14692 --- [Pharmacy] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-10-10T11:33:53.598+05:30  INFO 14692 --- [Pharmacy] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-10-10T11:33:53.602+05:30  INFO 14692 --- [Pharmacy] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-10-10T11:33:53.606+05:30  INFO 14692 --- [Pharmacy] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-10-10T11:33:53.617+05:30  INFO 14692 --- [Pharmacy] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-11-06T11:07:05.816+05:30  INFO 11504 --- [Pharmacy] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-06T11:07:06.125+05:30  INFO 11504 --- [Pharmacy] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-06T11:07:06.765+05:30  INFO 11504 --- [Pharmacy] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-11-06T11:07:08.273+05:30  WARN 11504 --- [Pharmacy] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-06T11:07:08.496+05:30 DEBUG 11504 --- [Pharmacy] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 102 mappings in 'requestMappingHandlerMapping'
+2025-11-06T11:07:08.675+05:30 DEBUG 11504 --- [Pharmacy] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-11-06T11:07:08.717+05:30 DEBUG 11504 --- [Pharmacy] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-11-06T11:07:08.807+05:30 DEBUG 11504 --- [Pharmacy] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-11-06T11:07:08.977+05:30  INFO 11504 --- [Pharmacy] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-11-06T11:07:09.033+05:30  INFO 11504 --- [Pharmacy] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8083 (http) with context path '/'
+2025-11-06T11:07:09.049+05:30  INFO 11504 --- [Pharmacy] [restartedMain] com.gn.pharmacy.PharmacyApplication      : Started PharmacyApplication in 12.028 seconds (process running for 13.314)
