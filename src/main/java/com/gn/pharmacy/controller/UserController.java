@@ -1,7 +1,9 @@
 package com.gn.pharmacy.controller;
 
+import com.gn.pharmacy.dto.request.UserDTO;
 import com.gn.pharmacy.dto.request.UserRequestDto;
 import com.gn.pharmacy.dto.response.UserResponseDto;
+import com.gn.pharmacy.entity.UserEntity;
 import com.gn.pharmacy.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
@@ -11,6 +13,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/api/users")
@@ -30,7 +33,7 @@ public class UserController {
         log.info("Request received to create user with email: {}", userRequestDto.getEmail());
 
         // Check if email already exists
-        if (userService.isEmailExists(userRequestDto.getEmail())) {
+        if (userService.    isEmailExists(userRequestDto.getEmail())) {
             log.warn("Email already exists: {}", userRequestDto.getEmail());
             return ResponseEntity.status(HttpStatus.CONFLICT)
                     .body("Email already exists: " + userRequestDto.getEmail());
@@ -39,6 +42,20 @@ public class UserController {
         UserResponseDto response = userService.createUser(userRequestDto);
         log.info("User created successfully with ID: {}", response.getUserId());
         return ResponseEntity.ok(response);
+    }
+
+
+    @PostMapping("/login")
+    public ResponseEntity<?> login(@RequestParam("mobile") String mobile,
+                                   @RequestParam("password") String password) {
+        try {
+            UserDTO user = userService.authenticateUser(mobile, password);
+            // Make sure your UserDTO includes the password field
+            return ResponseEntity.ok(user);
+        } catch (RuntimeException e) {
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED)
+                    .body(Map.of("error", e.getMessage()));
+        }
     }
 
     @GetMapping("/get-by-user-id/{userId}")
