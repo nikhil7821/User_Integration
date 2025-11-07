@@ -32,6 +32,8 @@ public class ProductRequestDto {
     private List<String> benefitsList = new ArrayList<>();
     private List<String> ingredientsList = new ArrayList<>();
 
+    private List<String> categoryPath;
+
 
     // Default constructor
     public ProductRequestDto() {}
@@ -195,5 +197,14 @@ public class ProductRequestDto {
 
     public void setIngredientsList(List<String> ingredientsList) {
         this.ingredientsList = ingredientsList;
+    }
+
+
+    public List<String> getCategoryPath() {
+        return categoryPath;
+    }
+
+    public void setCategoryPath(List<String> categoryPath) {
+        this.categoryPath = categoryPath;
     }
 }

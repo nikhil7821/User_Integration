@@ -205,4 +205,27 @@ public class ProductController {
         log.info("Bulk upload completed: {} products uploaded, {} skipped", response.getUploadedCount(), response.getSkippedCount());
         return ResponseEntity.ok(response);
     }
+
+
+    //=====================================================================
+    //    NEW-PATCH     get-Products-By-Category-Path                        //
+    //=====================================================================
+
+    @GetMapping("/get-category-by-path")
+    public ResponseEntity<List<ProductResponseDto>> getByCategoryPath(@RequestParam List<String> path) {
+        log.info("Fetching products by category path: {}", path);
+        List<ProductResponseDto> products = productService.getProductsByCategoryPath(path);
+        return ResponseEntity.ok(products);
+    }
+
+    //===============================================================
+    //    NEW-PATCH     get-Products-By-Sub-Path                        //
+    //===============================================================
+
+    @GetMapping("/get-category-by-subpath/{subPath}")
+    public ResponseEntity<List<ProductResponseDto>> getBySubPath(@PathVariable String subPath) {
+        log.info("Fetching products under subpath: {}", subPath);
+        List<ProductResponseDto> products = productService.getProductsBySubPath(subPath);
+        return ResponseEntity.ok(products);
+    }
 }

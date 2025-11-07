@@ -66,6 +66,12 @@ public class ProductEntity {
     private String batchNo;
 
 
+    // NEW: Hierarchical path
+    @ElementCollection
+    @CollectionTable(name = "category_path_products", joinColumns = @JoinColumn(name = "product_id"))
+    @Column(name = "category_path")
+    private List<String> categoryPath = new ArrayList<>();
+
     //NEW ADDED COLUMN
     @ElementCollection
     @CollectionTable(name = "product_benefits", joinColumns = @JoinColumn(name = "product_id"))
@@ -107,8 +113,9 @@ public class ProductEntity {
                          BigDecimal productPrice, BigDecimal productOldPrice, String productStock,
                          String productStatus, String productDescription, LocalDateTime createdAt,
                          Integer productQuantity, boolean prescriptionRequired, String brandName,
-                         String mfgDate, String expDate, String batchNo, List<String> benefitsList,
-                         List<String> directionsList, byte[] productMainImage, List<byte[]> productSubImages,
+                         String mfgDate, String expDate, String batchNo, List<String> categoryPath,
+                         List<String> benefitsList, List<String> ingredientsList,
+                         byte[] productMainImage, List<byte[]> productSubImages,
                          Map<String, String> productDynamicFields, List<String> productSizes) {
         this.productId = productId;
         this.productName = productName;
@@ -126,6 +133,7 @@ public class ProductEntity {
         this.mfgDate = mfgDate;
         this.expDate = expDate;
         this.batchNo = batchNo;
+        this.categoryPath = categoryPath;
         this.benefitsList = benefitsList;
         this.ingredientsList = ingredientsList;
         this.productMainImage = productMainImage;
@@ -312,5 +320,13 @@ public class ProductEntity {
 
     public void setIngredientsList(List<String> ingredientsList) {
         this.ingredientsList = ingredientsList;
+    }
+
+    public List<String> getCategoryPath() {
+        return categoryPath;
+    }
+
+    public void setCategoryPath(List<String> categoryPath) {
+        this.categoryPath = categoryPath;
     }
 }
